@@ -23,7 +23,7 @@ export const AppContextProvider = ({ children }) => {
   const [filter, setFilter] = useState(null);
 
   const createTip = (tip) => {
-    setAllTips((pTips = [...pTips, tip]));
+    setAllTips((pTips) => [...pTips, tip]);
   };
 
   const filterTip = (query) => {
